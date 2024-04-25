@@ -48,15 +48,21 @@ Instale as dependências Node
 - Execution
   After installing all dependencies, you can set up the database by running the Laravel migrations:
 
-```php artisan migrate```
+```bash 
+php artisan migrate
+```
 
   Then, populate the database with test data using the Laravel seeder:
 
-```php artisan db:seed```
+```bash
+php artisan db:seed
+```
 
   Finally, start the Laravel Mix asset compiler to compile your assets and watch for changes:
 
-```npm run watch```
+```bash
+npm run watch
+```
 
 
 
