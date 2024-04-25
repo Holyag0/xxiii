@@ -180,7 +180,7 @@ class ServiceVendas
             $parcelaVenda['venda_id'] = $venda->id;
             $parcelaVenda['data_pagamento'] = Carbon::now();
             $parcelaVenda['desconto'] = $data['desconto'];
-            $parcelaVenda['valor_parcela'] = (moneyToFloat($data['valor']) -  moneyToFloat($data['desconto'])) / $data['parcelas'];
+            $parcelaVenda['valor_parcela'] = (moneyToFloat($data['valor_venda'])  -  moneyToFloat($data['desconto'])) / $data['parcelas'];
             
             for ($i=0; $i < $data['parcelas']; $i++) 
             {   $this->serviceParcela()->create($parcelaVenda);}
@@ -188,7 +188,7 @@ class ServiceVendas
 
             //debito ou pagamentos a vista
         if($data['parcelas'] == null ){
-            $parcelaVenda['valor_parcela'] = number_format(((moneyToFloat($data['valor']) -  moneyToFloat($data['desconto']))), 2);
+            $parcelaVenda['valor_parcela'] = number_format(((moneyToFloat($data['valor_venda']) -  moneyToFloat($data['desconto']))), 2);
             $parcelaVenda['venda_id'] = $venda->id;
             $parcelaVenda['data_pagamento'] = Carbon::now();
             $parcelaVenda['desconto'] = $data['desconto'];

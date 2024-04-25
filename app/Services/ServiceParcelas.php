@@ -59,7 +59,7 @@ class ServiceParcelas
     public function show($id)
     {
         return $this->getParcelas()
-        ->with('venda', 'venda.aluno', 'venda.aluno.autoEscola')
+        ->with('venda', 'venda.aluno')
         ->find($id);
     }
     public function create($data)
