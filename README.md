@@ -3,44 +3,46 @@ começo do projeto
 centro de formação de condutores (cfc)
 
 
-## Pré-requisitos
+Prerequisites
+Before you start, make sure you have the following installed on Docker or Laravel Sail:
 
-Antes de começar, certifique-se de ter o seguinte instalado no docker ou laravel-sail:
-- PHP 8.0=>
-- Composer
-- Node.js
-- NPM
-- mysql
-- nginx (opcional)
+PHP 8.0 or higher
+Composer
+Node.js
+NPM
+MySQL
+Nginx (optional)
 
-## Instalação
+Installation
+First, clone the repository to your local machine:
 
-Primeiro, clone o repositório para a sua máquina local:
+git clone <your-repository-url>
 
-bash
-```git clone <url-do-seu-repositório>```
+Install the PHP dependencies with Composer:
 
-Instale as dependências do PHP com o Composer:
-```composer install```
+composer install
 
-nstale as dependências do Node.js com o NPM:
-```npm install```
+Install the Node.js dependencies with NPM:
 
-Execução
-Depois de instalar todas as dependências, você pode configurar o banco de dados executando as migrações do Laravel:
+npm install
 
-```php artisan migrate```
+Execution
+After installing all dependencies, you can set up the database by running the Laravel migrations:
 
-Em seguida, popule o banco de dados com dados de teste usando o seeder do Laravel:
+php artisan migrate
 
-```php artisan db:seed```
+Then, populate the database with test data using the Laravel seeder:
 
-Finalmente, inicie o compilador de assets do Laravel Mix para compilar seus assets e assistir a mudanças:
+php artisan db:seed
 
-```npm run watch```
+Finally, start the Laravel Mix asset compiler to compile your assets and watch for changes:
 
-Contribuição
-Pull requests são bem-vindos. Para grandes alterações, abra uma issue primeiro para discutir o que você gostaria de mudar.
+npm run watch
 
-Licença
+Contribution
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+License
 MIT
+
+I hope this helps! If you have any other questions or need further assistance, feel free to ask.
