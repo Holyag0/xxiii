@@ -36,10 +36,13 @@ Entre no diretório do projeto
   cd xxiii
 ```
 
-Instale as dependências
+Instale as dependências composer 
 
 ```bash
   composer install
+```
+Instale as dependências Node
+```bash
   npm install
 ```
 - Execution
