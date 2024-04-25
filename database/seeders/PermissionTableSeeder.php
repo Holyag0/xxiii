@@ -1,0 +1,176 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use Spatie\Permission\Models\Permission;
+
+
+class PermissionTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+       $permissions = [
+            'atendimentos',
+                'aluno-list',
+                'aluno-show',
+                'aluno-cadastro',
+                'aluno-create',
+                'aluno-edit',
+                'aluno-delete',
+                'aluno-relatorio',
+                'aluno-dados',
+                'aluno-exames',
+                'aluno-vendas',
+
+            'cadastros',
+            'cadastro-clinica',
+                'clinica-list',
+                'clinica-show',
+                'clinica-create',
+                'clinica-edit',
+                'clinica-delete',
+            'cadastro-fornecedor',
+                'fornecedor-list',
+                'fornecedor-show',
+                'fornecedor-create',
+                'fornecedor-edit',
+                'fornecedor-delete',
+            'cadastro-usuario',
+                'user-list',
+                'user-show',
+                'user-create',
+                'user-edit',
+                'user-delete',
+                    'role-list',
+                    'role-show',
+                    'role-create',
+                    'role-edit',
+                    'role-delete',
+            'cadastro-colaborador',
+                'colaborador-list',
+                'colaborador-show',
+                'colaborador-create',
+                'colaborador-edit',
+                'colaborador-delete',
+            'cadastro-cfc',
+                'cfc-list',
+                'cfc-show',
+                'cfc-create',
+                'cfc-edit',
+                'cfc-delete',
+            'cadastro-instrutor',
+                'instrutor-list',
+                'instrutor-show',
+                'instrutor-create',
+                'instrutor-edit',
+                'instrutor-delete',
+            'cadastro-relatorios',
+
+            'financeiro',
+            'financeiro-receitas',
+                'receita-list',
+                'receita-show',
+                'receita-create',
+                'receita-edit',
+                'receita-delete',
+                'receita-multipla',
+                'receita-reabrir',
+                'receita-baixar',
+            'financeiro-despesa',
+                'despesa-list',
+                'despesa-show',
+                'despesa-create',
+                'despesa-edit',
+                'despesa-delete',
+                'despesa-reabrir',
+                'despesa-baixar',
+            'financeiro-transferencia',
+                'transferencia-list',
+                'transferencia-show',
+                'transferencia-create',
+                'transferencia-edit',
+                'transferencia-delete',
+            'financeiro-centro-custo',
+                'centro-list',
+                'centro-show',
+                'centro-create',
+                'centro-edit',
+                'centro-delete',
+            'financeiro-categorias',
+                'categoria-list',
+                'categoria-show',
+                'categoria-create',
+                'categoria-edit',
+                'categoria-delete',
+            'financeiro-relatorios',
+
+            'comercial',
+            'comercial-pacotes',
+                'pacote-list',
+                'pacote-show',
+                'pacote-create',
+                'pacote-edit',
+                'pacote-delete',
+            'comercial-servicos',
+                'servico-list',
+                'servico-show',
+                'servico-create',
+                'servico-edit',
+                'servico-delete',
+            'comercial-relatorios',
+
+            'boletos',
+                'boleto-list',
+                'boleto-gerar',
+                'boleto-cancelar',
+
+            'exames',
+                'exame-list',
+                'exame-show',
+                'exame-lancar',
+                'exame-resultado',
+
+            'contas',
+                'contas-list',
+                'contas-create',
+                'contas-show',
+                'contas-edit',
+                'contas-delete',
+            'transacoes',
+                'transacoes-list',
+                'transacoes-show',
+                'transacoes-create',
+                'transacoes-edit',
+                'transacoes-delete',
+
+            'credito',
+                'credito-list',
+                'credito-show',
+                'credito-create',
+                'credito-edit',
+                'credito-delete',
+                'credito-solicitar',
+                'credito-pagar',
+                'creditosPagos-visualizar',
+
+            'vendas',
+                'vendas-list',
+                'vendas-show',
+                'vendas-create',
+                'vendas-edit',
+                'vendas-delete',
+                'vendas-baixa-parcela',
+                'vendas-reabre-parcela'
+        ];
+
+        foreach ($permissions as $permission) {
+             Permission::create(['name' => $permission]);
+        }
+    }
+}
