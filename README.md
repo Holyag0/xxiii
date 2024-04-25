@@ -13,31 +13,31 @@ NPM
 MySQL
 Nginx (optional)
 
-Installation
+- Installation
 First, clone the repository to your local machine:
 
-git clone <your-repository-url>
+```git clone <my-repository-url>```
 
-Install the PHP dependencies with Composer:
+I*nstall the PHP dependencies with Composer:
 
-composer install
+```composer install```
 
 Install the Node.js dependencies with NPM:
 
-npm install
+```npm install```
 
-Execution
+- Execution
 After installing all dependencies, you can set up the database by running the Laravel migrations:
 
-php artisan migrate
+```php artisan migrate```
 
 Then, populate the database with test data using the Laravel seeder:
 
-php artisan db:seed
+```php artisan db:seed```
 
 Finally, start the Laravel Mix asset compiler to compile your assets and watch for changes:
 
-npm run watch
+```npm run watch```
 
 Contribution
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
