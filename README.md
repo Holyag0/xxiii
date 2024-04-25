@@ -15,7 +15,7 @@ Nginx (optional)
 
 ## Installation
 
-Instale my-project com npm
+Instale my-project 
 
 ```bash
   cd projects
