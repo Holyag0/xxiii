@@ -1,9 +1,9 @@
+
 # xxiii 
 começo do projeto
 centro de formação de condutores (cfc)
 
-
-Prerequisites
+## Prerequisites
 Before you start, make sure you have the following installed on Docker or Laravel Sail:
 
 PHP 8.0 or higher
@@ -13,31 +13,56 @@ NPM
 MySQL
 Nginx (optional)
 
-- Installation
-First, clone the repository to your local machine:
+## Instalação
 
-```git clone <my-repository-url>```
+Instale my-project com npm
 
-I*nstall the PHP dependencies with Composer:
+```bash
+  npm install my-project
+  cd my-project
+```
+    
+## Rodando localmente
 
-```composer install```
+Clone o projeto
 
-Install the Node.js dependencies with NPM:
+```bash
+  git clone https://link-to-project
+```
 
-```npm install```
+Entre no diretório do projeto
 
+```bash
+  cd xxiii
+```
+
+Instale as dependências
+
+```bash
+  composer install
+  npm install
+```
 - Execution
-After installing all dependencies, you can set up the database by running the Laravel migrations:
+  After installing all dependencies, you can set up the database by running the Laravel migrations:
 
 ```php artisan migrate```
 
-Then, populate the database with test data using the Laravel seeder:
+  Then, populate the database with test data using the Laravel seeder:
 
 ```php artisan db:seed```
 
-Finally, start the Laravel Mix asset compiler to compile your assets and watch for changes:
+  Finally, start the Laravel Mix asset compiler to compile your assets and watch for changes:
 
 ```npm run watch```
+
+
+
+## Stack utilizada
+
+**Front-end:** Vuejs3,TailwindCSS,Npm
+
+**Back-end:** php, compose, Inertis.js 
+
 
 Contribution
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
