@@ -1,7 +1,7 @@
 
 # xxiii 
-começo do projeto
-centro de formação de condutores (cfc)
+Project start Driver Training Center (DTC)
+
 
 ## Prerequisites
 Before you start, make sure you have the following installed on Docker or Laravel Sail:
@@ -13,7 +13,7 @@ NPM
 MySQL
 Nginx (optional)
 
-## Instalação
+## Installation
 
 Instale my-project com npm
 
@@ -22,26 +22,25 @@ Instale my-project com npm
   cd my-project
 ```
     
-## Rodando localmente
+## Running Locally
 
-Clone o projeto
+Clone the project
 
 ```bash
   git clone https://link-to-project
 ```
 
-Entre no diretório do projeto
+Go into the project directory
 
 ```bash
   cd xxiii
 ```
-
-Instale as dependências composer 
+Install the composer dependencies
 
 ```bash
   composer install
 ```
-Instale as dependências Node
+Install the Node dependencies
 ```bash
   npm install
 ```
